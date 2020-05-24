@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+  </head>
+  <body>
+      <h1><%= date %></h1>
+      <ul>
+        <% for(var i = 0;i<items.length;i++) {%>
+        <li><%= items[i] %></li>
+        <% } %>
+      </ul>
+      <form action="/" method="post">
+        <input type="text" name="newItem">
+        <button type="submit" name="button">Submit</button>
+      </form>
+  </body>
+</html>
